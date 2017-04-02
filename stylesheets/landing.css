@@ -23,14 +23,33 @@ body.landing .menubar div {
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
 }
 
+body.landing .share {
+  position: absolute;
+  right: auto;
+  bottom: 35px;
+  width: 100%;
+}
+
+body.landing .share p {
+  font-size: 16px;
+  color: lightgrey;
+}
+
 .compact {
   display: none;
 }
 
 .landingWrapper {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 1440px;
   margin: 0 auto;
@@ -46,13 +65,13 @@ body.landing .menubar div {
   overflow: hidden;
 }
 
-.mainSection div {
+.mainSection section {
   position: absolute;
   top: 150px;
   width: 580px;
 }
 
-.mainSection.left div {
+.mainSection.left section {
   left: 160px;
 }
 
@@ -60,7 +79,7 @@ body.landing .menubar div {
   margin-left: -60px;
 }
 
-.mainSection.right div {
+.mainSection.right section {
   right: 160px;
 }
 
@@ -74,7 +93,7 @@ body.landing .menubar div {
   border-top: 1px solid #f7f7f7;
 }
 
-.mainSection.center div {
+.mainSection.center section {
   top: 180px;
   width: 100%;
 }
@@ -169,12 +188,12 @@ body.landing .menubar div {
     height: 568px;
   }
 
-  .mainSection div {
+  .mainSection section {
     top: 105px;
     width: 410px;
   }
 
-  .mainSection.left div {
+  .mainSection.left section {
     left: 190px;
   }
 
@@ -182,7 +201,7 @@ body.landing .menubar div {
     margin-left: -40px;
   }
 
-  .mainSection.right div {
+  .mainSection.right section {
     right: 190px;
   }
 
@@ -190,7 +209,7 @@ body.landing .menubar div {
     margin-left: 300px;
   }
 
-  .mainSection.center div {
+  .mainSection.center section {
     top: 105px;
   }
 
@@ -267,12 +286,12 @@ body.landing .menubar div {
     height: 1024px;
   }
 
-  .mainSection div {
+  .mainSection section {
     top: 120px;
   }
 
-  .mainSection.left div,
-  .mainSection.right div {
+  .mainSection.left section,
+  .mainSection.right section {
     left: 165px;
     right: auto;
   }
@@ -289,7 +308,7 @@ body.landing .menubar div {
     margin-left: 430px;
   }
 
-  .mainSection.center div {
+  .mainSection.center section {
     top: 105px;
   }
 
